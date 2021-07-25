@@ -1,0 +1,558 @@
+footer {
+  background: #eaeeef;
+  color: #345;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0px;
+}
+
+footer a {
+  color: #345;
+}
+
+footer a:hover {
+  color: #99a1aa;
+}
+
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+  background-color: grey;
+}
+
+.contact-form textarea {
+  height: 220px;
+}
+
+/* letter */
+.letter-title {
+  text-align: start;
+  font-size: 2.2em;
+  margin-left: 48px;
+}
+
+/* .stamp {
+  float: left;
+  margin: 0 auto 16px 48px;
+} */
+
+.letter-info {
+  margin-left: 200px;
+}
+
+/* SMARTPHONES */
+@media screen and (max-width: 767px) {
+  /* letter */
+  .mletter-title {
+    text-align: start;
+    font-size: 3em;
+    margin-left: 32px;
+  }
+
+  /* .stamp {
+    float: left;
+    margin: 0 auto 16px 24px;
+  } */
+
+  .letter-info {
+    margin-left: 160px;
+  }
+
+  .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  h4.mletter-title {
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .qrcode {
+    width: 200px !important;
+  }
+}
+
+/*  --------------------------------------------
+
+	8. THEME - customize colors etc...
+	
+    -------------------------------------------- */
+:root {
+  --primary-color: #00d2d3;
+  --secondary-color: #00d2d3;
+  --tracheary-color: #f2cb03;
+}
+
+body {
+  color: #345;
+}
+
+/* Links */
+a {
+  color: #00d2d3;
+}
+
+a:hover {
+  color: #00a3a4;
+}
+
+/* Text Selection */
+::-moz-selection {
+  text-shadow: none;
+  color: #333;
+  background: #ffffcf;
+}
+::selection {
+  text-shadow: none;
+  color: #333;
+  background: #ffffcf;
+}
+
+::-moz-selection {
+  text-shadow: none;
+  color: #333;
+  background: #ffffcf;
+}
+
+/* Service Icons */
+.color1 i {
+  background: #feca57;
+}
+
+.color2 i {
+  background: #54a0ff;
+}
+
+.color3 i {
+  background: #1cd1a1;
+}
+
+.color4 i {
+  background: #ff6b6b;
+}
+
+/* PRIMARY COLOR : #00d2d3
+       ================================================== */
+.navigation a:hover,
+.pagination a:hover,
+.entry-meta a:hover,
+.single-page-layout .vs-nav li i:hover,
+.media-box .mask:before,
+.button.primary:hover,
+a.more-link:hover,
+.flex-control-paging li a.flex-active,
+.mejs-controls .mejs-time-rail .mejs-time-current,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  background: var(--primary-color);
+}
+
+.entry-title a:hover,
+.portfolio-nav a.button:hover,
+.related-posts li a:hover,
+.nav-single a:hover,
+.comment-meta a:hover,
+.comment-meta .fn + a:hover,
+.comment-reply-link:hover {
+  color: var(--primary-color);
+}
+
+.portfolio-nav a.button:hover,
+.format-link .link-content > a:first-child:hover,
+.flex-control-paging li a:hover,
+.bypostauthor > article {
+  border-color: var(--primary-color);
+}
+
+/* SECONDARY COLOR : #00d2d3 - lighter than primary color but i have used same
+       ================================================== */
+.skill-unit .bar .progress,
+.event .date,
+.letter-info p i,
+.media-cell-desc .date,
+#nprogress .bar,
+#fancybox-close,
+.portfolio-nav a.button.back {
+  background: var(--tracheary-color);
+}
+
+#nprogress .spinner-icon {
+  border-top-color: var(--tracheary-color);
+  border-left-color: var(--tracheary-color);
+}
+
+/* FIX FOR CHROME FULSCREEN VIDEO ISSUE */
+:-webkit-full-screen-ancestor:not(iframe) *:not(video) {
+  animation: none;
+  -webkit-animation: none;
+}
+
+/* validation  */
+label.error {
+  background-color: #ff6b6b;
+}
+
+label.error:after {
+  border-bottom: 8px solid #ff6b6b;
+}
+
+.my-large-icon {
+  font-size: 44px !important;
+}
+
+/* STAMP */
+.mstamp {
+  display: inline-block;
+  position: relative;
+  margin: 20px auto;
+  /* float: left; */
+  width: 114px;
+  height: 134px;
+  background: url(../images/bckg/stamp.png) 0 0 no-repeat;
+}
+
+.mstamp:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bckg/stamp-mask.png) 0 0 no-repeat;
+}
+
+.mstamp img {
+  display: inline-block;
+  width: 94px;
+  height: 114px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/* LETTER */
+.mletter {
+  padding: 1em 0 3em 0;
+  overflow: auto;
+}
+
+.mletter-title {
+  margin: 0 0 0 40px;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: 'Tangerine', serif;
+  color: #d0dadc;
+}
+
+.mletter-info {
+  /* margin-left: 130px; */
+  margin: 20px auto;
+}
+
+.mletter-info p i {
+  display: inline-block;
+  padding: 7px 9px;
+  font-size: 15px;
+  color: #fff;
+  background: #00d2d3;
+  margin: 0 14px 10px 0;
+  border-radius: 50%;
+}
+
+.mletter-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.qrcode {
+  width: 150px;
+}
+
+.qrcode p {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #6a7686;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.testo p {
+  text-align: justify;
+}
+
+.chuckNorris {
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  max-width: 960px;
+  margin: auto;
+  color: var(--primary-color);
+}
+
+/* Social icons colors */
+
+.social li a.facebook:hover {
+  background-color: #3b5999;
+  /* box-shadow: 0 0 10px 0px #3b5999; */
+}
+
+.social li a.twitter:hover {
+  background-color: #55acee;
+  /* box-shadow: 0 0 10px 0px #55acee; */
+}
+
+.social li a.dribbble:hover {
+  background-color: #ea4c89;
+  /* box-shadow: 0 0 10px 0px #ea4c89; */
+}
+
+.social li a.linkedin:hover {
+  background-color: #0077b5;
+  /* box-shadow: 0 0 10px 0px #0077b5; */
+}
+
+.social li a.youtube:hover {
+  background-color: #cd201f;
+  /* box-shadow: 0 0 10px 0px #cd201f; */
+}
+
+.social li a.pinterest:hover {
+  background-color: #bd081c;
+  /* box-shadow: 0 0 10px 0px #bd081c; */
+}
+
+.social li a.github:hover {
+  background-color: #333;
+  /* box-shadow: 0 0 10px 0px #333; */
+}
+
+.social li a.instagram:hover {
+  background-color: #e4405f;
+  /* box-shadow: 0 0 10px 0px #e4405f; */
+}
+
+.social li a.stack-overflow:hover {
+  background-color: #f48024;
+  /* box-shadow: 0 0 10px 0px #f48024; */
+}
+
+.social li a.whatsapp:hover {
+  background-color: #25d366;
+  /* box-shadow: 0 0 10px 0px #25D366; */
+}
+
+.hidden {
+  display: none;
+}
+
+/* ::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eaeeef;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0783c6;
+} */
+
+/* HEADER */
+
+.header h1 {
+  font-weight: 300;
+  /* font-size: 1.6rem; */
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  z-index: -199;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(255, 255, 255, 0)),
+    color-stop(rgba(255, 255, 255, 1)),
+    to(rgba(255, 255, 255, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  ); */
+}
+
+header .header-avatar {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+  position: relative;
+  background-image: url(../images/space_bg.svg);
+  background-size: cover;
+}
+
+.preloader-rocket {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 999999;
+}
+
+.space {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-animation: space 2s linear infinite;
+  animation: space 2s linear infinite;
+}
+
+.rocket {
+  width: 120px;
+  z-index: 0;
+}
+
+.flame {
+  width: 40px;
+  -webkit-animation: flame 0.2s linear infinite;
+  animation: flame 0.2s linear infinite;
+}
+
+.cloud {
+  width: 300px;
+  animation: cloud 0.2s linear infinite reverse;
+}
+
+@-webkit-keyframes flame {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+  }
+}
+
+@keyframes flame {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+  }
+}
+
+@-webkit-keyframes cloud {
+  0%,
+  100% {
+    -webkit-transform: translateX(-2%);
+    transform: translateX(-2%);
+  }
+  50% {
+    -webkit-transform: translateX(2%);
+    transform: translateX(2%);
+  }
+}
+
+@keyframes cloud {
+  0%,
+  100% {
+    -webkit-transform: translateX(-2%);
+    transform: translateX(-2%);
+  }
+  50% {
+    -webkit-transform: translateX(2%);
+    transform: translateX(2%);
+  }
+}
+
+@-webkit-keyframes space {
+  0% {
+    -webkit-transform: translate(-50%, -100vh);
+    transform: translate(-50%, -100vh);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 100vh);
+    transform: translate(-50%, 100vh);
+  }
+}
+
+@keyframes space {
+  0% {
+    -webkit-transform: translate(-50%, -100vh);
+    transform: translate(-50%, -100vh);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 100vh);
+    transform: translate(-50%, 100vh);
+  }
+}
