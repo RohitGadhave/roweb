@@ -963,7 +963,7 @@
                                     </label>
                                     <!-- enter mail subject here -->
 
-                                    <input type="hidden" name="subject" id="subject" value="New mail from rohitg.com">
+                                    <input type="hidden" name="subject" id="subject" value="New mail from Portfolio site">
                                     <p>
                                         <label for="name">NAME</label>
                                         <input type="text" name="name" id="name" class="required" required>
@@ -1008,7 +1008,7 @@
     <!-- CONTAINER -->
 
     <footer>
-        <p>© 2021 Copyright: <a href="index.html">ROHITG.COM</a></p>
+        <p>© 2021 Copyright: <a href="/" id="my-link">ROHITG.COM</a></p>
     </footer>
 
     <!-- PORTFOLIO SINGLE AJAX CONTENT CONTAINER -->
@@ -1029,7 +1029,11 @@
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
                 .catch(error => console.error('Error!', error.message))
-        })
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+          const homeLink = document.getElementById('home-link');
+          homeLink.innerHTML = window.location.hostname;
+        });
     </script>
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
